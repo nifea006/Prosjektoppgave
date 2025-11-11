@@ -1,2 +1,5 @@
 # Prosjektoppgave
-Jeg skal vise hva jeg kan innen IT. Jeg skal bruke ferdigheter fra alle programfagene i ett  prosjekt. Det skal bestå av programvare jeg utvikler, som kjører på en infrastruktur jeg setter opp. Løsningen skal være tilgjengelig for brukere på nettet, og inneholde opplæringsmateriale for  brukerne.
+Jeg planlegger å opprette et sosialt medie for skolebarn i Oslo. Medien vil kun tillate elever i Oslo-skoler å bli med ved å sjekke skoledomenet sitt "@osloskolen.no". Jeg fikk ideen fra filmen "The Social Network (2010)" hvor Mark Zuckerberg lagte en sosiale medie bare for studenter fra Hardvard.
+For å lage sosiale medien for programmering skal jeg bruke Python/Flask og kanskje JavaScript, for databasen tenkte jeg å bruke MariaDB.
+
+To be continued...
