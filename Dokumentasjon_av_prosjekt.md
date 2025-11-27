@@ -23,7 +23,7 @@ Man logger inn ved bruk av skole e-post, dataen skal lagres inn i en database.
 **Teknologier brukt:**
 
 -   Python / Flask
--   Fauna DB
+-   MariaDB
 -   HTML / CSS / JS
 
 ------------------------------------------------------------------------
@@ -69,7 +69,7 @@ Refleksjon: Hvordan hjalp Kanban arbeidet?\
 
 **Databasenavn:**
 
-    Fauna
+    Maria
 
 **Tabeller:**\
 \| Tabell \| Felt \| Datatype \| Beskrivelse \|\
@@ -127,12 +127,5 @@ Forklar ruter og funksjoner (kort).
 
 -   w3schools:\
     https://www.w3schools.com/
--   Fauna:\
-    https://docs.faunadb.org/fauna/current/
--   Youtube:
-    -   7 Database Paradigms:\
-        https://www.youtube.com/watch?v=W2Z7fbCLSTw
-    -   FaunaDB Basics - The Database of your Dreams:\
-        https://www.youtube.com/watch?v=2CipVwISumA
 -   Teams:\
     https://teams.microsoft.com/l/entity/77be3f72-7c14-415f-992c-3511dd54a4ae/classwork?context=%7B%22channelId%22%3A%2219%3Ah7S08vAuVG_6mwoVTLcS2mptEzDELy9ATvgrFmFEvYY1%40thread.tacv2%22%2C%22contextType%22%3A%22channel%22%2C%22subEntityId%22%3A%22%7B%5C%22action%5C%22%3A%5C%22navigate%5C%22%2C%5C%22view%5C%22%3A%5C%22classwork-list%5C%22%2C%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2239aa8592-48c1-41b5-b66f-553b4a7d544e%5C%22%2C%5C%22moduleIds%5C%22%3A%5B%5C%22d5655950-5bd6-470a-9dd8-01eac0aa4891%5C%22%5D%7D%5D%7D%2C%5C%22deeplinkType%5C%22%3A4%7D%22%7D&groupId=39aa8592-48c1-41b5-b66f-553b4a7d544e&tenantId=a5a66368-d49e-4bf5-af9a-6ccbf48e6655&openInMeeting=false&isTeamLevelApp=true

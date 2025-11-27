@@ -14,13 +14,14 @@
 
     <form action="/login" method="post">
         <label>E-post</label>
-        <input type="email" name="email" placeholder="ditt.skole.e-post@osloskolen.no">
+        <input type="email" name="email" placeholder="ditt.skole.e-post@osloskolen.no" required>
 
 
         <label>Passord</label>
-        <input type="password" name="password" placeholder="••••••••">
+        <input type="password" name="password" placeholder="••••••••" required>
 
         <button type="submit"><a href="/">Logg inn</a></button>
+        <button><a href="/register">Register</a></button>
     </form>
 
 </body>
