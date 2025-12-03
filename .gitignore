@@ -1,1 +1,3 @@
 /.env
+/app.sock
+/__pycache__
