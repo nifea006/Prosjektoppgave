@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/messages.css">
+    <title>Meldinger</title>
+</head>
+
+<body>
+
+    {% include "navbar.html" %}
+    <div class="messages-container">
+
+        <h2>Meldinger</h2>
+
+        <div class="message-list">
+            {% for msg in inbox %}
+            <div class="message-item">
+                <strong>{{ msg.first_name }} {{ msg.last_name }}</strong>
+                <p>{{ msg.content }}</p>
+                <small>{{ msg.created_at }}</small>
+            </div>
+            {% endfor %}
+        </div>
+
+        <hr>
+
+        <h3>Send melding</h3>
+        <form action="/send_message/{{ session.user_id }}" method="POST" class="send-form">
+            <textarea name="content" placeholder="Skriv melding..." required></textarea>
+            <button class="btn">Send</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

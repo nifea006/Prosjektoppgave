@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/friends.css">
+    <title>Venner</title>
+</head>
+
+<body>
+    {% include "navbar.html" %}
+    <div class="friends-container">
+
+        <h2>Elever</h2>
+
+        <div class="users-list">
+            {% for user in users %}
+            {% if user.id != session.user_id %}
+            <div class="user-card">
+
+                <img src="/static/uploads/{{ user.profile_pic }}" class="pfp">
+
+                <div class="info">
+                    <strong>{{ user.first_name }} {{ user.last_name }}</strong>
+                </div>
+
+                <div class="actions">
+                    <a href="/add_friend/{{ user.id }}" class="btn">Legg til venn</a>
+                </div>
+
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+    </div>
+</body>
+
+</html>

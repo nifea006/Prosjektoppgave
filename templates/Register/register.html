@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrer konto</title>
+    <link rel="stylesheet" href="/static/css/auth.css">
+</head>
+
+<body>
+
+    <form action="/register" method="post" class="auth-box">
+        <h2>Registrer deg</h2>
+
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+
+        <input type="text" name="first_name" placeholder="Fornavn" required>
+        <input type="text" name="last_name" placeholder="Etternavn" required>
+
+        <input type="email" name="email" placeholder="E-post" required>
+
+        <input type="password" name="password" placeholder="Passord" required>
+        <input type="password" name="confirm-password" placeholder="Bekreft passord" required>
+
+        <label>Fødselsdato</label>
+        <input type="date" name="birthday" required>
+
+        <button class="btn" type="submit">Registrer</button>
+
+        <a href="/login" class="small-link">Har allerede konto? Logg inn</a>
+    </form>
+
+</body>
+
+</html>

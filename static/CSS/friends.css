@@ -1,0 +1,36 @@
+.friends-container {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.users-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+    gap: 20px;
+}
+
+.user-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-card .pfp {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    background: #1976ff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}

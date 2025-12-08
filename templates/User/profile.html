@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/profile.css">
+    <title>Profil</title>
+</head>
+
+<body>
+
+    {% include "navbar.html" %}
+    <div class="profile-container">
+
+        <div class="profile-card">
+
+            <img src="/static/uploads/{{ user.profile_pic }}" class="profile-picture">
+
+            <form action="/upload_picture" method="POST" enctype="multipart/form-data">
+                <input type="file" name="profile_pic" required>
+                <button class="btn">Last opp nytt bilde</button>
+            </form>
+
+            <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+
+            <ul class="info-list">
+                <li><strong>E-post:</strong> {{ user.email }}</li>
+                <li><strong>Alder:</strong> {{ user.age }}</li>
+                <li><strong>Fødselsdato:</strong> {{ user.birthday }}</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

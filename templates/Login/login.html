@@ -1,28 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velkommen til OsloStudent</title>
-    <link rel="stylesheet" href="../../static/CSS/style.css">
+    <title>OsloStudent - Logg inn</title>
+    <link rel="stylesheet" href="/static/css/auth.css">
 </head>
 
 <body>
 
-    <h1>Velkommen til OsloStudent</h1>
+    <div class="container">
+        <div class="info">
+            <h1>Velkommen til OsloStudent</h1>
 
-    <form action="/login" method="post">
-        <label>E-post</label>
-        <input type="email" name="email" placeholder="ditt.skole.e-post@osloskolen.no" required>
+            <ul>
+                <li>👥 Koble med medelever</li>
+                <li>💬 Del og diskuter</li>
+                <li>📅 Hold deg oppdatert</li>
+            </ul>
+        </div>
 
+        <form action="/login" method="post" class="auth-box">
+            <h2>Logg inn</h2>
 
-        <label>Passord</label>
-        <input type="password" name="password" placeholder="••••••••" required>
+            {% if error %}
+            <p class="error">{{ error }}</p>
+            {% endif %}
 
-        <button type="submit"><a href="/">Logg inn</a></button>
-        <button><a href="/register">Register</a></button>
-    </form>
+            <label>E-postadresse</label>
+            <input type="email" name="email" required>
+
+            <label>Passord</label>
+            <input type="password" name="password" required>
+
+            <button type="submit" class="btn">Logg inn</button>
+
+            <a href="/register" class="small-link">Har du ikke konto? Registrer deg</a>
+        </form>
+    </div>
 
 </body>
 

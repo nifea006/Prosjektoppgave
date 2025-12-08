@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/settings.css">
+    <title>Innstillinger</title>
+</head>
+
+<body>
+
+    {% include "navbar.html" %}
+    <div class="settings-container">
+
+        <h2>Innstillinger</h2>
+
+        <div class="settings-card">
+
+            <h3>Endre passord</h3>
+            <form method="POST" action="/change_password">
+                <input type="password" name="old_password" placeholder="Gammelt passord" required>
+                <input type="password" name="new_password" placeholder="Nytt passord" required>
+                <button class="btn">Oppdater passord</button>
+            </form>
+
+            <hr>
+
+            <form action="/delete_account" method="POST">
+                <button class="danger">Slett konto</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+.feed-container {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.create-post {
+    background: white;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.create-post textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.post {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.post-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pfp {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-content {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.post-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.like-btn {
+    text-decoration: none;
+    color: #1976ff;
+    font-weight: bold;
+}
+
+.comments {
+    margin-top: 10px;
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.comment {
+    padding: 5px 0;
+}
+
+.comment-form {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.comment-form input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.comment-form button {
+    padding: 8px 15px;
+    border: none;
+    background: #1976ff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}

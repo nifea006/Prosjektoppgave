@@ -1,33 +1,20 @@
-<link rel="stylesheet" href="../static/CSS/style.css">
+<link rel="stylesheet" href="/static/css/navbar.css">
 
 <nav class="navbar">
-    <img src="" alt="OsloStudent Logo" class="logo">
-    <input type="search" placeholder="Søk etter elever, skoler..." class="search-bar">
-    <br>
-    <ul>
-        <li><a href="/">Hjem</a></li>
-        <li><a href="/users-friends">👥 Venner</a></li>
-        <li><a href="/chats">💬 Chats</a></li>
-        <li><button class="drop-down" onclick="show()">🔔</button></li>
-        <ul class="dropdown-menu hiden">
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-            <li>test</li>
-            <!-- {% for notification in notifications %}
-                <li class="notification">{{ notification }} X</li>
-            {% endfor %} -->
-        </ul>
-        <li><a href="/settings">⚙️ Settings</a></li>
-    </ul>
-    <br>
-    <a href="/profile" class="profile-link"><img src="" alt="profile" class="profile-img"></a>
-</nav>
+    <div class="left">
+        <span class="logo">🎓 OsloStudent</span>
+        <input type="search" placeholder="Søk etter elever, skoler..." class="search">
+    </div>
 
-<script>
-    function show() {
-        const menu = document.querySelector('.dropdown-menu');
-        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-    }
-</script>
+    <ul class="menu">
+        <li><a href="/">Hjem</a></li>
+        <li><a href="/friends">Elever</a></li>
+        <li><a href="/messages">Meldinger</a></li>
+        <li><a href="/settings">⚙️</a></li>
+    </ul>
+
+    <div class="profile">
+        <a href="/profile">{{ session.email }}</a>
+        <a href="/logout" class="logout">Logg ut</a>
+    </div>
+</nav>
